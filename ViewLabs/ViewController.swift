@@ -139,10 +139,10 @@ class ViewController: UIViewController {
         }
         animator.addAnimations {
             if self.openCard {
-                self.rootHeightAnchor.constant = 200
+                self.rootHeightAnchor.constant = 100
                 self.secondView.transform = CGAffineTransform(translationX: 0, y: -100)
             } else {
-                self.rootHeightAnchor.constant = 100
+                self.rootHeightAnchor.constant = -100
                 self.secondView.transform = CGAffineTransform(translationX: 0, y: 0)
             }
             
